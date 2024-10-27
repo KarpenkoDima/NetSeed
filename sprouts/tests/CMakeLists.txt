@@ -1,0 +1,12 @@
+# sprouts/tests/CMakeLists.txt
+
+# Подключаем Unity
+include(FetchContent)
+FetchContent_Declare(
+    unity
+    GIT_REPOSITORY https://github.com/ThrowTheSwitch/Unity.git
+    GIT_TAG v2.5.2
+)
+FetchContent_MakeAvailable(unity)
+
+add_subdirectory(memory)
